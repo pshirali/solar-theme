@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Preview &mdash; Solar 1.3.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.3.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Solar 1.3.2 documentation" href="index.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="About" href="readme.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href="_static/solarized-dark.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="Installation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="readme.html" title="About"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Solar 1.3.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Preview</a><ul>
+<li><a class="reference internal" href="#styles">Styles</a></li>
+<li><a class="reference internal" href="#admonition-levels">Admonition levels</a><ul>
+<li><a class="reference internal" href="#note">Note</a></li>
+<li><a class="reference internal" href="#hint-tip">Hint, Tip</a></li>
+<li><a class="reference internal" href="#warning-important">Warning, Important</a></li>
+<li><a class="reference internal" href="#caution-attention-danger-and-error">Caution, Attention, Danger and Error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="readme.html"
+                        title="previous chapter">About</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="installation.html"
+                        title="next chapter">Installation</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/preview.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="preview">
+<h1>Preview<a class="headerlink" href="#preview" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="styles">
+<h2>Styles<a class="headerlink" href="#styles" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>List element 1</li>
+<li>List element 2</li>
+</ul>
+<p>Code snippet:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">fabric.api</span> <span class="kn">import</span> <span class="n">local</span>
+
+<span class="k">def</span> <span class="nf">run_rcc</span><span class="p">():</span>
+        <span class="sd">&quot;&quot;&quot;Generate resources file&quot;&quot;&quot;</span>
+        <span class="n">local</span><span class="p">(</span><span class="s">&quot;pyrcc4 -o resources_rc.py ui/resources.qrc&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">run_uic</span><span class="p">():</span>
+        <span class="sd">&quot;&quot;&quot;Process ui file&quot;&quot;&quot;</span>
+        <span class="n">local</span><span class="p">(</span><span class="s">&quot;pyuic4 -o ui_window.py ui/window.ui&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="admonition-levels">
+<h2>Admonition levels<a class="headerlink" href="#admonition-levels" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="note">
+<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a note!</p>
+</div>
+</div>
+<div class="section" id="hint-tip">
+<h3>Hint, Tip<a class="headerlink" href="#hint-tip" title="Permalink to this headline">¶</a></h3>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">This can be a hint.</p>
+</div>
+</div>
+<div class="section" id="warning-important">
+<h3>Warning, Important<a class="headerlink" href="#warning-important" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">There can be warnings too!</p>
+</div>
+</div>
+<div class="section" id="caution-attention-danger-and-error">
+<h3>Caution, Attention, Danger and Error<a class="headerlink" href="#caution-attention-danger-and-error" title="Permalink to this headline">¶</a></h3>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">Requires your attention.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="Installation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="readme.html" title="About"
+             >previous</a> |</li>
+        <li><a href="index.html">Solar 1.3.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Vimalkumar Velayudhan.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.Theme by <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>
