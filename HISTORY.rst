@@ -2,6 +2,10 @@
 
 History
 -------
+1.3.1 (2014-03-12)
+..................
+* Use `import solar; solar.theme_path` to get theme path.
+* Updated setup.py
 
 1.3.0 (2014-03-12)
 ..................

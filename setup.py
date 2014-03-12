@@ -19,7 +19,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='solar',
-    version='0.1.0',
+    version='1.3.1',
     description='Theme for Python Sphinx',
     long_description=readme + '\n\n' + history,
     author='Vimalkumar Velayudhan',
@@ -29,22 +29,21 @@ setup(
         'solar',
     ],
     package_dir={'solar': 'solar'},
-    include_package_data=True,
+    package_data={'solar': ['theme.conf', 'static/subtle_dots.png', '*.html',
+                            'static/*.css']},
     install_requires=[
     ],
     license="BSD",
     zip_safe=False,
     keywords='solar',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
-        'Intended Audience :: Developers',
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 2.7'
     ],
     test_suite='tests',
 )
