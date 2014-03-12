@@ -18,24 +18,24 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
-    name='solar',
+    name='solar-theme',
     version='1.3.1',
     description='Theme for Python Sphinx',
     long_description=readme + '\n\n' + history,
     author='Vimalkumar Velayudhan',
     author_email='vimalkumarvelayudhan@gmail.com',
-    url='https://github.com/vkvn/solar',
+    url='https://github.com/vkvn/solar-theme',
     packages=[
-        'solar',
+        'solar_theme',
     ],
-    package_dir={'solar': 'solar'},
-    package_data={'solar': ['theme.conf', 'static/subtle_dots.png', '*.html',
+    package_dir={'solar_theme': 'solar_theme'},
+    package_data={'solar_theme': ['theme.conf', 'static/subtle_dots.png', '*.html',
                             'static/*.css']},
     install_requires=[
     ],
     license="BSD",
     zip_safe=False,
-    keywords='solar',
+    keywords='solar theme',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: End Users/Desktop',
