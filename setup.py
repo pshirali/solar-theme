@@ -19,7 +19,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='solar-theme',
-    version='1.3.1',
+    version='1.3.2',
     description='Theme for Python Sphinx',
     long_description=readme + '\n\n' + history,
     author='Vimalkumar Velayudhan',

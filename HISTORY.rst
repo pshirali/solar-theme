@@ -2,10 +2,16 @@
 
 History
 -------
+
+1.3.2 (2014-03-12)
+..................
+* Project renamed to solar-theme. solar exists in PyPI.
+* Update README and docs.
+
 1.3.1 (2014-03-12)
 ..................
 * Use `import solar; solar.theme_path` to get theme path.
-* Updated setup.py
+* Updated setup.py.
 
 1.3.0 (2014-03-12)
 ..................

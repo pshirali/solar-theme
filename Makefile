@@ -42,7 +42,7 @@ coverage:
 docs:
 	rm -f docs/solar.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ solar
+	sphinx-apidoc -o docs/ solar_theme
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html

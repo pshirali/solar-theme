@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Solar's documentation!
-======================================
+Solar Theme
+===========
 
 Contents:
 
@@ -12,15 +12,9 @@ Contents:
    :maxdepth: 2
 
    readme
+   preview
    installation
    usage
    contributing
    authors
    history
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

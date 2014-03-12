@@ -4,9 +4,9 @@ Installation
 
 At the command line::
 
-    $ easy_install solar
+    $ easy_install solar-theme
 
 Or, if you have virtualenvwrapper installed::
 
-    $ mkvirtualenv solar
-    $ pip install solar
+    $ mkvirtualenv solar-theme
+    $ pip install solar-theme
