@@ -3,6 +3,7 @@
 help:
 	@echo "clean-build - remove build artifacts"
 	@echo "clean-pyc - remove Python file artifacts"
+	@echo "clean-tox - remove tox testing artifacts"
 	@echo "lint - check style with flake8"
 	@echo "test - run tests quickly with the default Python"
 	@echo "test-all - run tests on every Python version with tox"
@@ -11,7 +12,7 @@ help:
 	@echo "release - package and upload a release"
 	@echo "sdist - package"
 
-clean: clean-build clean-pyc
+clean: clean-build clean-pyc clean-tox
 	rm -fr htmlcov/
 
 clean-build:
@@ -24,8 +25,11 @@ clean-pyc:
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
+clean-tox:
+	rm -rf .tox/
+
 lint:
-	flake8 solar tests
+	flake8 solar_theme tests
 
 test:
 	python setup.py test
@@ -34,13 +38,13 @@ test-all:
 	tox
 
 coverage:
-	coverage run --source solar setup.py test
+	coverage run --source solar_theme setup.py test
 	coverage report -m
 	coverage html
 	open htmlcov/index.html
 
 docs:
-	rm -f docs/solar.rst
+	rm -f docs/solar_theme.rst
 	rm -f docs/modules.rst
 	sphinx-apidoc -o docs/ solar_theme
 	$(MAKE) -C docs clean
