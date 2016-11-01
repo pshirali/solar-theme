@@ -3,6 +3,12 @@
 History
 -------
 
+1.3.3 (2016-11-01)
+..................
+* Fix: Changed references from 'solar' to 'solar_theme'
+* Fix: Updated links to the repo url
+* Updated: tox config, unittests, requirements, Makefile
+
 1.3.2 (2014-03-12)
 ..................
 * Project renamed to solar-theme. solar exists in PyPI.
