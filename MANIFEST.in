@@ -3,7 +3,7 @@ include CONTRIBUTING.rst
 include HISTORY.rst
 include LICENSE
 include README.rst
-include solar/theme.conf
-include solar/static/subtle_dots.png
-recursive-include solar *.html
-recursive-include solar/static/ *.css
+include solar_theme/theme.conf
+include solar_theme/static/subtle_dots.png
+recursive-include solar_theme *.html
+recursive-include solar_theme/static/ *.css
