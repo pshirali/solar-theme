@@ -18,7 +18,7 @@ class TestSolar(unittest.TestCase):
 
     def test_import_solar_theme(self):
         try:
-            import solar_theme
+            import solar_theme                                  # noqa
         except ImportError:
             self.fail("!!! ERROR !!! -- Could not import 'solar_theme'")
 
